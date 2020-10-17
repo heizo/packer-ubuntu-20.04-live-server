@@ -1,0 +1,19 @@
+#cloud-config
+autoinstall:
+  version: 1
+  early-commands:
+    - 'sudo systemctl stop ssh'
+  network:
+    network:
+      version: 2
+      ethernets:
+        enp0s3:
+          dhcp4: true
+  identity:
+    hostname: focal64
+    username: vagrant
+    password: $6$r0.SCOWKMTrHIpz$JCnAEUhC6P5RuZAihFyITQztGyaydcNMNWwp0DhmpHZFoWAIgd7Z8Yup.fVmivsbqYbYg0Do47uzY7s1m0SOR.
+  ssh:
+    install-server: true
+  user-data:
+    timezone: Asia/Tokyo
