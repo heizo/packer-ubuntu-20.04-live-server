@@ -9,8 +9,8 @@ To create VirtualBox virtual machine.
 packer build ubuntu.json
 ```
 
-### Ubuntu Server 20.04.1
-Tested with [Packer][] 1.6.3, [Vagrant][] 2.2.10, [VirtualBox][] 6.1.14
+### Ubuntu Server 20.04.2
+Tested with [Packer][] 1.6.6, [Vagrant][] 2.2.10, [VirtualBox][] 6.1.18
 
 [Packer]: https://packer.io/
 [Vagrant]: https://www.vagrantup.com/
